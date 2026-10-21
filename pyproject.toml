@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-trigger-lab"
+version = "0.1.0"
+description = "Lint, score and live-test whether an agent SKILL.md actually gets triggered. Deterministic, offline, CI-friendly."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "wutianxiang88-hash" }]
+keywords = ["agent-skills", "skill", "lint", "eval", "trigger", "claude-code", "llm", "ci", "frontmatter", "yaml"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.scripts]
+skill-trigger-lab = "skill_trigger_lab.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/wutianxiang88-hash/skill-trigger-lab"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,67 @@
+{
+  "skill": "pdf-form-filler",
+  "generated_by": "skill-trigger-lab",
+  "meta": {
+    "source": "examples/pdf-form-filler/SKILL.md",
+    "kind": "seed",
+    "note": "template-derived; humanise phrasing before trusting scores"
+  },
+  "evals": [
+    {
+      "id": "q01",
+      "kind": "should_trigger",
+      "query": "I need help: fill a PDF form, check whether a signed PDF was flattened, extract form field values to JSON, or validate required fields before submission",
+      "note": "derived from: Use when the user asks to fill a PDF form, check whether a signed PDF was flatte",
+      "should_trigger": true
+    },
+    {
+      "id": "q02",
+      "kind": "should_trigger",
+      "query": "Is there a way to fill a PDF form, check whether a signed PDF was flattened, extract form field values to JSON, or validate required field ?",
+      "note": "question phrasing",
+      "should_trigger": true
+    },
+    {
+      "id": "q03",
+      "kind": "should_trigger",
+      "query": "please run the pdf-form-filler on this file",
+      "note": "imperative probe (name mention)",
+      "should_trigger": true
+    },
+    {
+      "id": "q04",
+      "kind": "should_trigger",
+      "query": "帮我做一次flatten and audit",
+      "note": "chinese imperative probe",
+      "should_trigger": true
+    },
+    {
+      "id": "q05",
+      "kind": "should_not_trigger",
+      "query": "帮我处理一下：merging, splitting or OCR of scanned pages",
+      "note": "explicit exclusion honoured",
+      "should_trigger": false
+    },
+    {
+      "id": "q06",
+      "kind": "should_not_trigger",
+      "query": "what is flatten and audit ? just explain the concept, do nothing",
+      "note": "definition-only probe",
+      "should_trigger": false
+    },
+    {
+      "id": "q07",
+      "kind": "should_not_trigger",
+      "query": "what kind of tool would one use to fill a PDF form, check whether a signed PDF was flattened, extract form field va ? I am not asking you to do it",
+      "note": "meta-question probe",
+      "should_trigger": false
+    },
+    {
+      "id": "q08",
+      "kind": "should_not_trigger",
+      "query": "write me a haiku about the sea",
+      "note": "unrelated control",
+      "should_trigger": false
+    }
+  ]
+}
