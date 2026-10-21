@@ -33,4 +33,8 @@ Python ≥ 3.9，零依赖，完全离线。
 - `run` 的准确性取决于你的宿主是否真的暴露「技能被加载」的证据；引用准确率时必须同时给出 `--cmd` 和 `--marker`。
 - `gen` 生成的是种子查询，不是成品基准。
 
+## 同一作者的其他技能
+
+- [cn-fin-tie-out](https://github.com/wutianxiang88-hash/cn-fin-tie-out)：中文财报数字复算的 Agent Skill——模型负责抽取，工具负责复算，人负责看 FAIL 行。它和本仓库守的是同一条规矩：`SKILL.md` 要写清什么时候用它，而不只是它是什么。
+
 许可证 MIT · 作者 wutianxiang88-hash

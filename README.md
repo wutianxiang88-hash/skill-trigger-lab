@@ -103,4 +103,12 @@ not a live measurement.
 - `run` accuracy is only as good as your runner's activation evidence. State
   your `--cmd` and `--marker` when you quote a number.
 
+## More from this author
+
+- [cn-fin-tie-out](https://github.com/wutianxiang88-hash/cn-fin-tie-out) — an
+  Agent Skill for deterministic recomputation of Chinese financial statements:
+  the model extracts, the tool checks the arithmetic, a human reads the FAIL
+  rows. Built with the same rule this repo enforces — a `SKILL.md` has to say
+  when it applies, not just what it is.
+
 ## License · MIT. · Author · wutianxiang88-hash
